@@ -28,465 +28,459 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.txt1 = new System.Windows.Forms.TextBox();
+            this.txt2 = new System.Windows.Forms.TextBox();
+            this.txt4 = new System.Windows.Forms.TextBox();
+            this.txt3 = new System.Windows.Forms.TextBox();
+            this.txt5 = new System.Windows.Forms.TextBox();
+            this.txt10 = new System.Windows.Forms.TextBox();
+            this.txt9 = new System.Windows.Forms.TextBox();
+            this.txt8 = new System.Windows.Forms.TextBox();
+            this.txt7 = new System.Windows.Forms.TextBox();
+            this.txt6 = new System.Windows.Forms.TextBox();
+            this.txt20 = new System.Windows.Forms.TextBox();
+            this.txt19 = new System.Windows.Forms.TextBox();
+            this.txt18 = new System.Windows.Forms.TextBox();
+            this.txt17 = new System.Windows.Forms.TextBox();
+            this.txt16 = new System.Windows.Forms.TextBox();
+            this.txt15 = new System.Windows.Forms.TextBox();
+            this.txt14 = new System.Windows.Forms.TextBox();
+            this.txt13 = new System.Windows.Forms.TextBox();
+            this.txt12 = new System.Windows.Forms.TextBox();
+            this.txt11 = new System.Windows.Forms.TextBox();
+            this.txt30 = new System.Windows.Forms.TextBox();
+            this.txt29 = new System.Windows.Forms.TextBox();
+            this.txt28 = new System.Windows.Forms.TextBox();
+            this.txt27 = new System.Windows.Forms.TextBox();
+            this.txt26 = new System.Windows.Forms.TextBox();
+            this.txt25 = new System.Windows.Forms.TextBox();
+            this.txt24 = new System.Windows.Forms.TextBox();
+            this.txt23 = new System.Windows.Forms.TextBox();
+            this.txt22 = new System.Windows.Forms.TextBox();
+            this.txt21 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txt1
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(234, 75);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox1.MaxLength = 1;
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(50, 50);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt1.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt1.Location = new System.Drawing.Point(63, 88);
+            this.txt1.Margin = new System.Windows.Forms.Padding(0);
+            this.txt1.MaxLength = 1;
+            this.txt1.Multiline = true;
+            this.txt1.Name = "txt1";
+            this.txt1.Size = new System.Drawing.Size(50, 50);
+            this.txt1.TabIndex = 0;
+            this.txt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt1_KeyPress);
+            this.txt1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt1_KeyUp);
             // 
-            // textBox2
+            // txt2
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(291, 75);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox2.MaxLength = 1;
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(50, 50);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt2.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt2.Location = new System.Drawing.Point(120, 88);
+            this.txt2.Margin = new System.Windows.Forms.Padding(0);
+            this.txt2.MaxLength = 1;
+            this.txt2.Multiline = true;
+            this.txt2.Name = "txt2";
+            this.txt2.Size = new System.Drawing.Size(50, 50);
+            this.txt2.TabIndex = 1;
+            this.txt2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt2_KeyPress);
+            this.txt2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt2_KeyUp);
             // 
-            // textBox3
+            // txt4
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(405, 75);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox3.MaxLength = 1;
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(50, 50);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt4.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt4.Location = new System.Drawing.Point(234, 88);
+            this.txt4.Margin = new System.Windows.Forms.Padding(0);
+            this.txt4.MaxLength = 1;
+            this.txt4.Multiline = true;
+            this.txt4.Name = "txt4";
+            this.txt4.Size = new System.Drawing.Size(50, 50);
+            this.txt4.TabIndex = 3;
+            this.txt4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt4_KeyPress);
+            this.txt4.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt4_KeyUp);
             // 
-            // textBox4
+            // txt3
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(348, 75);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox4.MaxLength = 1;
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(50, 50);
-            this.textBox4.TabIndex = 2;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt3.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt3.Location = new System.Drawing.Point(177, 88);
+            this.txt3.Margin = new System.Windows.Forms.Padding(0);
+            this.txt3.MaxLength = 1;
+            this.txt3.Multiline = true;
+            this.txt3.Name = "txt3";
+            this.txt3.Size = new System.Drawing.Size(50, 50);
+            this.txt3.TabIndex = 2;
+            this.txt3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt3_KeyPress);
+            this.txt3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt3_KeyUp);
             // 
-            // textBox5
+            // txt5
             // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.Location = new System.Drawing.Point(462, 75);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox5.MaxLength = 1;
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(50, 50);
-            this.textBox5.TabIndex = 4;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt5.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt5.Location = new System.Drawing.Point(291, 88);
+            this.txt5.Margin = new System.Windows.Forms.Padding(0);
+            this.txt5.MaxLength = 1;
+            this.txt5.Multiline = true;
+            this.txt5.Name = "txt5";
+            this.txt5.Size = new System.Drawing.Size(50, 50);
+            this.txt5.TabIndex = 4;
+            this.txt5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt5_KeyPress);
+            this.txt5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt5_KeyUp);
             // 
-            // textBox6
+            // txt10
             // 
-            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox6.Location = new System.Drawing.Point(462, 132);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox6.MaxLength = 1;
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(50, 50);
-            this.textBox6.TabIndex = 9;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt10.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt10.Location = new System.Drawing.Point(291, 145);
+            this.txt10.Margin = new System.Windows.Forms.Padding(0);
+            this.txt10.MaxLength = 1;
+            this.txt10.Multiline = true;
+            this.txt10.Name = "txt10";
+            this.txt10.Size = new System.Drawing.Size(50, 50);
+            this.txt10.TabIndex = 9;
+            this.txt10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox7
+            // txt9
             // 
-            this.textBox7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox7.Location = new System.Drawing.Point(405, 132);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox7.MaxLength = 1;
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(50, 50);
-            this.textBox7.TabIndex = 8;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt9.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt9.Location = new System.Drawing.Point(234, 145);
+            this.txt9.Margin = new System.Windows.Forms.Padding(0);
+            this.txt9.MaxLength = 1;
+            this.txt9.Multiline = true;
+            this.txt9.Name = "txt9";
+            this.txt9.Size = new System.Drawing.Size(50, 50);
+            this.txt9.TabIndex = 8;
+            this.txt9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox8
+            // txt8
             // 
-            this.textBox8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox8.Location = new System.Drawing.Point(348, 132);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox8.MaxLength = 1;
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(50, 50);
-            this.textBox8.TabIndex = 7;
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt8.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt8.Location = new System.Drawing.Point(177, 145);
+            this.txt8.Margin = new System.Windows.Forms.Padding(0);
+            this.txt8.MaxLength = 1;
+            this.txt8.Multiline = true;
+            this.txt8.Name = "txt8";
+            this.txt8.Size = new System.Drawing.Size(50, 50);
+            this.txt8.TabIndex = 7;
+            this.txt8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox9
+            // txt7
             // 
-            this.textBox9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox9.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox9.Location = new System.Drawing.Point(291, 132);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox9.MaxLength = 1;
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(50, 50);
-            this.textBox9.TabIndex = 6;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt7.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt7.Location = new System.Drawing.Point(120, 145);
+            this.txt7.Margin = new System.Windows.Forms.Padding(0);
+            this.txt7.MaxLength = 1;
+            this.txt7.Multiline = true;
+            this.txt7.Name = "txt7";
+            this.txt7.Size = new System.Drawing.Size(50, 50);
+            this.txt7.TabIndex = 6;
+            this.txt7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox10
+            // txt6
             // 
-            this.textBox10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox10.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox10.Location = new System.Drawing.Point(234, 132);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox10.MaxLength = 1;
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(50, 50);
-            this.textBox10.TabIndex = 5;
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt6.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt6.Location = new System.Drawing.Point(63, 145);
+            this.txt6.Margin = new System.Windows.Forms.Padding(0);
+            this.txt6.MaxLength = 1;
+            this.txt6.Multiline = true;
+            this.txt6.Name = "txt6";
+            this.txt6.Size = new System.Drawing.Size(50, 50);
+            this.txt6.TabIndex = 5;
+            this.txt6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox11
+            // txt20
             // 
-            this.textBox11.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox11.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox11.Location = new System.Drawing.Point(462, 246);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox11.MaxLength = 1;
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(50, 50);
-            this.textBox11.TabIndex = 19;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt20.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt20.Location = new System.Drawing.Point(291, 259);
+            this.txt20.Margin = new System.Windows.Forms.Padding(0);
+            this.txt20.MaxLength = 1;
+            this.txt20.Multiline = true;
+            this.txt20.Name = "txt20";
+            this.txt20.Size = new System.Drawing.Size(50, 50);
+            this.txt20.TabIndex = 19;
+            this.txt20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox12
+            // txt19
             // 
-            this.textBox12.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox12.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox12.Location = new System.Drawing.Point(405, 246);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox12.MaxLength = 1;
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(50, 50);
-            this.textBox12.TabIndex = 18;
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt19.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt19.Location = new System.Drawing.Point(234, 259);
+            this.txt19.Margin = new System.Windows.Forms.Padding(0);
+            this.txt19.MaxLength = 1;
+            this.txt19.Multiline = true;
+            this.txt19.Name = "txt19";
+            this.txt19.Size = new System.Drawing.Size(50, 50);
+            this.txt19.TabIndex = 18;
+            this.txt19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox13
+            // txt18
             // 
-            this.textBox13.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox13.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox13.Location = new System.Drawing.Point(348, 246);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox13.MaxLength = 1;
-            this.textBox13.Multiline = true;
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(50, 50);
-            this.textBox13.TabIndex = 17;
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt18.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt18.Location = new System.Drawing.Point(177, 259);
+            this.txt18.Margin = new System.Windows.Forms.Padding(0);
+            this.txt18.MaxLength = 1;
+            this.txt18.Multiline = true;
+            this.txt18.Name = "txt18";
+            this.txt18.Size = new System.Drawing.Size(50, 50);
+            this.txt18.TabIndex = 17;
+            this.txt18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox14
+            // txt17
             // 
-            this.textBox14.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox14.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox14.Location = new System.Drawing.Point(291, 246);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox14.MaxLength = 1;
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(50, 50);
-            this.textBox14.TabIndex = 16;
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt17.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt17.Location = new System.Drawing.Point(120, 259);
+            this.txt17.Margin = new System.Windows.Forms.Padding(0);
+            this.txt17.MaxLength = 1;
+            this.txt17.Multiline = true;
+            this.txt17.Name = "txt17";
+            this.txt17.Size = new System.Drawing.Size(50, 50);
+            this.txt17.TabIndex = 16;
+            this.txt17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox15
+            // txt16
             // 
-            this.textBox15.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox15.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox15.Location = new System.Drawing.Point(234, 246);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox15.MaxLength = 1;
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(50, 50);
-            this.textBox15.TabIndex = 15;
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt16.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt16.Location = new System.Drawing.Point(63, 259);
+            this.txt16.Margin = new System.Windows.Forms.Padding(0);
+            this.txt16.MaxLength = 1;
+            this.txt16.Multiline = true;
+            this.txt16.Name = "txt16";
+            this.txt16.Size = new System.Drawing.Size(50, 50);
+            this.txt16.TabIndex = 15;
+            this.txt16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox16
+            // txt15
             // 
-            this.textBox16.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox16.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox16.Location = new System.Drawing.Point(462, 189);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox16.MaxLength = 1;
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(50, 50);
-            this.textBox16.TabIndex = 14;
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt15.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt15.Location = new System.Drawing.Point(291, 202);
+            this.txt15.Margin = new System.Windows.Forms.Padding(0);
+            this.txt15.MaxLength = 1;
+            this.txt15.Multiline = true;
+            this.txt15.Name = "txt15";
+            this.txt15.Size = new System.Drawing.Size(50, 50);
+            this.txt15.TabIndex = 14;
+            this.txt15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox17
+            // txt14
             // 
-            this.textBox17.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox17.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox17.Location = new System.Drawing.Point(405, 189);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox17.MaxLength = 1;
-            this.textBox17.Multiline = true;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(50, 50);
-            this.textBox17.TabIndex = 13;
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt14.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt14.Location = new System.Drawing.Point(234, 202);
+            this.txt14.Margin = new System.Windows.Forms.Padding(0);
+            this.txt14.MaxLength = 1;
+            this.txt14.Multiline = true;
+            this.txt14.Name = "txt14";
+            this.txt14.Size = new System.Drawing.Size(50, 50);
+            this.txt14.TabIndex = 13;
+            this.txt14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox18
+            // txt13
             // 
-            this.textBox18.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox18.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox18.Location = new System.Drawing.Point(348, 189);
-            this.textBox18.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox18.MaxLength = 1;
-            this.textBox18.Multiline = true;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(50, 50);
-            this.textBox18.TabIndex = 12;
-            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt13.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt13.Location = new System.Drawing.Point(177, 202);
+            this.txt13.Margin = new System.Windows.Forms.Padding(0);
+            this.txt13.MaxLength = 1;
+            this.txt13.Multiline = true;
+            this.txt13.Name = "txt13";
+            this.txt13.Size = new System.Drawing.Size(50, 50);
+            this.txt13.TabIndex = 12;
+            this.txt13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox19
+            // txt12
             // 
-            this.textBox19.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox19.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox19.Location = new System.Drawing.Point(291, 189);
-            this.textBox19.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox19.MaxLength = 1;
-            this.textBox19.Multiline = true;
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(50, 50);
-            this.textBox19.TabIndex = 11;
-            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt12.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt12.Location = new System.Drawing.Point(120, 202);
+            this.txt12.Margin = new System.Windows.Forms.Padding(0);
+            this.txt12.MaxLength = 1;
+            this.txt12.Multiline = true;
+            this.txt12.Name = "txt12";
+            this.txt12.Size = new System.Drawing.Size(50, 50);
+            this.txt12.TabIndex = 11;
+            this.txt12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox20
+            // txt11
             // 
-            this.textBox20.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox20.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox20.Location = new System.Drawing.Point(234, 189);
-            this.textBox20.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox20.MaxLength = 1;
-            this.textBox20.Multiline = true;
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(50, 50);
-            this.textBox20.TabIndex = 10;
-            this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt11.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt11.Location = new System.Drawing.Point(63, 202);
+            this.txt11.Margin = new System.Windows.Forms.Padding(0);
+            this.txt11.MaxLength = 1;
+            this.txt11.Multiline = true;
+            this.txt11.Name = "txt11";
+            this.txt11.Size = new System.Drawing.Size(50, 50);
+            this.txt11.TabIndex = 10;
+            this.txt11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox21
+            // txt30
             // 
-            this.textBox21.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox21.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox21.Location = new System.Drawing.Point(462, 360);
-            this.textBox21.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox21.MaxLength = 1;
-            this.textBox21.Multiline = true;
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(50, 50);
-            this.textBox21.TabIndex = 29;
-            this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt30.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt30.Location = new System.Drawing.Point(291, 373);
+            this.txt30.Margin = new System.Windows.Forms.Padding(0);
+            this.txt30.MaxLength = 1;
+            this.txt30.Multiline = true;
+            this.txt30.Name = "txt30";
+            this.txt30.Size = new System.Drawing.Size(50, 50);
+            this.txt30.TabIndex = 29;
+            this.txt30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox22
+            // txt29
             // 
-            this.textBox22.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox22.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox22.Location = new System.Drawing.Point(405, 360);
-            this.textBox22.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox22.MaxLength = 1;
-            this.textBox22.Multiline = true;
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(50, 50);
-            this.textBox22.TabIndex = 28;
-            this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt29.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt29.Location = new System.Drawing.Point(234, 373);
+            this.txt29.Margin = new System.Windows.Forms.Padding(0);
+            this.txt29.MaxLength = 1;
+            this.txt29.Multiline = true;
+            this.txt29.Name = "txt29";
+            this.txt29.Size = new System.Drawing.Size(50, 50);
+            this.txt29.TabIndex = 28;
+            this.txt29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox23
+            // txt28
             // 
-            this.textBox23.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox23.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox23.Location = new System.Drawing.Point(348, 360);
-            this.textBox23.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox23.MaxLength = 1;
-            this.textBox23.Multiline = true;
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(50, 50);
-            this.textBox23.TabIndex = 27;
-            this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt28.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt28.Location = new System.Drawing.Point(177, 373);
+            this.txt28.Margin = new System.Windows.Forms.Padding(0);
+            this.txt28.MaxLength = 1;
+            this.txt28.Multiline = true;
+            this.txt28.Name = "txt28";
+            this.txt28.Size = new System.Drawing.Size(50, 50);
+            this.txt28.TabIndex = 27;
+            this.txt28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox24
+            // txt27
             // 
-            this.textBox24.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox24.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox24.Location = new System.Drawing.Point(291, 360);
-            this.textBox24.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox24.MaxLength = 1;
-            this.textBox24.Multiline = true;
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(50, 50);
-            this.textBox24.TabIndex = 26;
-            this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt27.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt27.Location = new System.Drawing.Point(120, 373);
+            this.txt27.Margin = new System.Windows.Forms.Padding(0);
+            this.txt27.MaxLength = 1;
+            this.txt27.Multiline = true;
+            this.txt27.Name = "txt27";
+            this.txt27.Size = new System.Drawing.Size(50, 50);
+            this.txt27.TabIndex = 26;
+            this.txt27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox25
+            // txt26
             // 
-            this.textBox25.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox25.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox25.Location = new System.Drawing.Point(234, 360);
-            this.textBox25.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox25.MaxLength = 1;
-            this.textBox25.Multiline = true;
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(50, 50);
-            this.textBox25.TabIndex = 25;
-            this.textBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt26.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt26.Location = new System.Drawing.Point(63, 373);
+            this.txt26.Margin = new System.Windows.Forms.Padding(0);
+            this.txt26.MaxLength = 1;
+            this.txt26.Multiline = true;
+            this.txt26.Name = "txt26";
+            this.txt26.Size = new System.Drawing.Size(50, 50);
+            this.txt26.TabIndex = 25;
+            this.txt26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox26
+            // txt25
             // 
-            this.textBox26.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox26.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox26.Location = new System.Drawing.Point(462, 303);
-            this.textBox26.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox26.MaxLength = 1;
-            this.textBox26.Multiline = true;
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(50, 50);
-            this.textBox26.TabIndex = 24;
-            this.textBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt25.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt25.Location = new System.Drawing.Point(291, 316);
+            this.txt25.Margin = new System.Windows.Forms.Padding(0);
+            this.txt25.MaxLength = 1;
+            this.txt25.Multiline = true;
+            this.txt25.Name = "txt25";
+            this.txt25.Size = new System.Drawing.Size(50, 50);
+            this.txt25.TabIndex = 24;
+            this.txt25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox27
+            // txt24
             // 
-            this.textBox27.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox27.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox27.Location = new System.Drawing.Point(405, 303);
-            this.textBox27.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox27.MaxLength = 1;
-            this.textBox27.Multiline = true;
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(50, 50);
-            this.textBox27.TabIndex = 23;
-            this.textBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt24.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt24.Location = new System.Drawing.Point(234, 316);
+            this.txt24.Margin = new System.Windows.Forms.Padding(0);
+            this.txt24.MaxLength = 1;
+            this.txt24.Multiline = true;
+            this.txt24.Name = "txt24";
+            this.txt24.Size = new System.Drawing.Size(50, 50);
+            this.txt24.TabIndex = 23;
+            this.txt24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox28
+            // txt23
             // 
-            this.textBox28.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox28.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox28.Location = new System.Drawing.Point(348, 303);
-            this.textBox28.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox28.MaxLength = 1;
-            this.textBox28.Multiline = true;
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(50, 50);
-            this.textBox28.TabIndex = 22;
-            this.textBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt23.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt23.Location = new System.Drawing.Point(177, 316);
+            this.txt23.Margin = new System.Windows.Forms.Padding(0);
+            this.txt23.MaxLength = 1;
+            this.txt23.Multiline = true;
+            this.txt23.Name = "txt23";
+            this.txt23.Size = new System.Drawing.Size(50, 50);
+            this.txt23.TabIndex = 22;
+            this.txt23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox29
+            // txt22
             // 
-            this.textBox29.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox29.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox29.Location = new System.Drawing.Point(291, 303);
-            this.textBox29.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox29.MaxLength = 1;
-            this.textBox29.Multiline = true;
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(50, 50);
-            this.textBox29.TabIndex = 21;
-            this.textBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt22.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt22.Location = new System.Drawing.Point(120, 316);
+            this.txt22.Margin = new System.Windows.Forms.Padding(0);
+            this.txt22.MaxLength = 1;
+            this.txt22.Multiline = true;
+            this.txt22.Name = "txt22";
+            this.txt22.Size = new System.Drawing.Size(50, 50);
+            this.txt22.TabIndex = 21;
+            this.txt22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox30
+            // txt21
             // 
-            this.textBox30.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox30.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox30.Location = new System.Drawing.Point(234, 303);
-            this.textBox30.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox30.MaxLength = 1;
-            this.textBox30.Multiline = true;
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(50, 50);
-            this.textBox30.TabIndex = 20;
-            this.textBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt21.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt21.Location = new System.Drawing.Point(63, 316);
+            this.txt21.Margin = new System.Windows.Forms.Padding(0);
+            this.txt21.MaxLength = 1;
+            this.txt21.Multiline = true;
+            this.txt21.Name = "txt21";
+            this.txt21.Size = new System.Drawing.Size(50, 50);
+            this.txt21.TabIndex = 20;
+            this.txt21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("HelveticaNeue", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(77, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(249, 76);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Wordle";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox21);
-            this.Controls.Add(this.textBox22);
-            this.Controls.Add(this.textBox23);
-            this.Controls.Add(this.textBox24);
-            this.Controls.Add(this.textBox25);
-            this.Controls.Add(this.textBox26);
-            this.Controls.Add(this.textBox27);
-            this.Controls.Add(this.textBox28);
-            this.Controls.Add(this.textBox29);
-            this.Controls.Add(this.textBox30);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox19);
-            this.Controls.Add(this.textBox20);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(411, 547);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txt30);
+            this.Controls.Add(this.txt29);
+            this.Controls.Add(this.txt28);
+            this.Controls.Add(this.txt27);
+            this.Controls.Add(this.txt26);
+            this.Controls.Add(this.txt25);
+            this.Controls.Add(this.txt24);
+            this.Controls.Add(this.txt23);
+            this.Controls.Add(this.txt22);
+            this.Controls.Add(this.txt21);
+            this.Controls.Add(this.txt20);
+            this.Controls.Add(this.txt19);
+            this.Controls.Add(this.txt18);
+            this.Controls.Add(this.txt17);
+            this.Controls.Add(this.txt16);
+            this.Controls.Add(this.txt15);
+            this.Controls.Add(this.txt14);
+            this.Controls.Add(this.txt13);
+            this.Controls.Add(this.txt12);
+            this.Controls.Add(this.txt11);
+            this.Controls.Add(this.txt10);
+            this.Controls.Add(this.txt9);
+            this.Controls.Add(this.txt8);
+            this.Controls.Add(this.txt7);
+            this.Controls.Add(this.txt6);
+            this.Controls.Add(this.txt5);
+            this.Controls.Add(this.txt4);
+            this.Controls.Add(this.txt3);
+            this.Controls.Add(this.txt2);
+            this.Controls.Add(this.txt1);
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Wordle";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -494,35 +488,36 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private TextBox textBox8;
-        private TextBox textBox9;
-        private TextBox textBox10;
-        private TextBox textBox11;
-        private TextBox textBox12;
-        private TextBox textBox13;
-        private TextBox textBox14;
-        private TextBox textBox15;
-        private TextBox textBox16;
-        private TextBox textBox17;
-        private TextBox textBox18;
-        private TextBox textBox19;
-        private TextBox textBox20;
-        private TextBox textBox21;
-        private TextBox textBox22;
-        private TextBox textBox23;
-        private TextBox textBox24;
-        private TextBox textBox25;
-        private TextBox textBox26;
-        private TextBox textBox27;
-        private TextBox textBox28;
-        private TextBox textBox29;
-        private TextBox textBox30;
+        private TextBox txt1;
+        private TextBox txt2;
+        private TextBox txt4;
+        private TextBox txt3;
+        private TextBox txt5;
+        private TextBox txt10;
+        private TextBox txt9;
+        private TextBox txt8;
+        private TextBox txt7;
+        private TextBox txt6;
+        private TextBox txt20;
+        private TextBox txt19;
+        private TextBox txt18;
+        private TextBox txt17;
+        private TextBox txt16;
+        private TextBox txt15;
+        private TextBox txt14;
+        private TextBox txt13;
+        private TextBox txt12;
+        private TextBox txt11;
+        private TextBox txt30;
+        private TextBox txt29;
+        private TextBox txt28;
+        private TextBox txt27;
+        private TextBox txt26;
+        private TextBox txt25;
+        private TextBox txt24;
+        private TextBox txt23;
+        private TextBox txt22;
+        private TextBox txt21;
+        private Label label1;
     }
 }
