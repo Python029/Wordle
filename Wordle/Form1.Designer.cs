@@ -119,6 +119,7 @@
             // 
             // txt5
             // 
+            this.txt5.BackColor = System.Drawing.SystemColors.Window;
             this.txt5.Font = new System.Drawing.Font("Microsoft YaHei UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txt5.Location = new System.Drawing.Point(291, 88);
             this.txt5.Margin = new System.Windows.Forms.Padding(0);
@@ -142,6 +143,7 @@
             this.txt10.Size = new System.Drawing.Size(50, 50);
             this.txt10.TabIndex = 9;
             this.txt10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt10.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt10_KeyUp);
             // 
             // txt9
             // 
@@ -154,6 +156,7 @@
             this.txt9.Size = new System.Drawing.Size(50, 50);
             this.txt9.TabIndex = 8;
             this.txt9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt9.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt9_KeyUp);
             // 
             // txt8
             // 
@@ -166,6 +169,7 @@
             this.txt8.Size = new System.Drawing.Size(50, 50);
             this.txt8.TabIndex = 7;
             this.txt8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt8.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt8_KeyUp);
             // 
             // txt7
             // 
@@ -178,6 +182,7 @@
             this.txt7.Size = new System.Drawing.Size(50, 50);
             this.txt7.TabIndex = 6;
             this.txt7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt7.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt7_KeyUp);
             // 
             // txt6
             // 
@@ -190,6 +195,7 @@
             this.txt6.Size = new System.Drawing.Size(50, 50);
             this.txt6.TabIndex = 5;
             this.txt6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt6.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt6_KeyUp);
             // 
             // txt20
             // 
