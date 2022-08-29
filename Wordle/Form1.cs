@@ -9,10 +9,20 @@ namespace Wordle
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            boxes = new TextBox[] {txt1, txt2, txt3, txt4, txt5, txt6, txt7, txt8, txt9, txt10, txt11, txt12 ,txt13, txt14, txt15, txt16, txt17, txt18, txt19, txt20, txt21, txt22, txt23, txt24, txt25, txt26, txt27, txt28, txt29, txt30 };
+            rows = new Boolean[] { row1, row2, row3, row4, row5 };
         }
-        string Solution;
-        string Guess;
+        TextBox[] boxes;
+        Boolean[] rows;
+        string s = "brain";
+        bool row1 = false;
+        bool row2 = false;
+        bool row3 = false;
+        bool row4 = false;
+        bool row5 = false;
+        string g;
+        Char[] Solution;
+        Char[] Guess;
         #region Key Events
         private void txt1_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -42,34 +52,29 @@ namespace Wordle
         #endregion
         private void CheckWord()
         {
-            Solution = "Brain";
-            Solution.ToCharArray();
-            for (int i = 0; i < Solution.Length; i++)
+            Solution = s.ToLower().ToCharArray();
+            for (int i = 0; i < Guess.Length; i++)
             {
-                for(int g = 0; g<Guess.Length; g++)
-                {
-                    if(Guess[g] == Solution[i])
+                if (rows[0])
+                { 
+                    if (Guess[i] == Solution[i])
                     {
-                        if(Guess[g] == 1)
-                        {
-                            txt1.BackColor = Color.Green;
-                        }
-                        if (Guess[g] == 2)
-                        {
-                            txt2.BackColor = Color.Green;
-                        }
-                        if (Guess[g] == 3)
-                        {
-                            txt3.BackColor = Color.Green;
-                        }
-                        if (Guess[g] == 4)
-                        {
-                            txt4.BackColor = Color.Green;
-                        }
-                        if (Guess[g] == 5)
-                        {
-                            txt5.BackColor = Color.Green;
-                        }
+                        boxes[i].BackColor = Color.Green;
+                    }
+                    else if (Guess[i] != Solution[i])
+                    {
+                        boxes[i].BackColor = Color.DarkGray;
+                    }
+                }
+                else if (rows[1])
+                {
+                    if (Guess[i] == Solution[i])
+                    {
+                        boxes[i+5].BackColor = Color.Green;
+                    }
+                    else if (Guess[i] != Solution[i])
+                    {
+                        boxes[i+5].BackColor = Color.DarkGray;
                     }
                 }
             }
@@ -78,6 +83,7 @@ namespace Wordle
         #region Row 1
         private void txt1_KeyUp(object sender, KeyEventArgs e)
         {
+            txt1.Text = txt1.Text.ToUpper();
             if (txt1.TextLength == 1)
             {
                 SendKeys.SendWait("{TAB}");
@@ -124,9 +130,10 @@ namespace Wordle
         {
             if (txt5.TextLength == 1 && e.KeyCode == Keys.Enter)
             {
-                SendKeys.Send("{TAB}");
-                Guess = txt1.Text + txt2.Text + txt3.Text + txt4.Text + txt5.Text;
-                Guess.ToCharArray();
+                rows[0] = true;
+                txt6.Focus();
+                g = txt1.Text.ToLower() + txt2.Text + txt3.Text + txt4.Text + txt5.Text;
+                Guess = g.ToLower().ToCharArray();
                 CheckWord();
             }
             if(e.KeyCode == Keys.Back)
@@ -138,9 +145,11 @@ namespace Wordle
         #region Row 2
         private void txt6_KeyUp(object sender, KeyEventArgs e)
         {
+            txt6.Text = txt6.Text.ToUpper();
             if (txt6.TextLength == 1)
             {
                 SendKeys.Send("{TAB}");
+                rows[0] = false;
             }
         }
 
@@ -150,6 +159,10 @@ namespace Wordle
             {
                 SendKeys.Send("{TAB}");
             }
+            if (e.KeyCode == Keys.Back)
+            {
+                txt6.Focus();
+            }
         }
 
         private void txt8_KeyUp(object sender, KeyEventArgs e)
@@ -157,6 +170,10 @@ namespace Wordle
             if (txt8.TextLength == 1)
             {
                 SendKeys.Send("{TAB}");
+            }
+            if (e.KeyCode == Keys.Back)
+            {
+                txt7.Focus();
             }
         }
 
@@ -166,13 +183,25 @@ namespace Wordle
             {
                 SendKeys.Send("{TAB}");
             }
+            if (e.KeyCode == Keys.Back)
+            {
+                txt8.Focus();
+            }
         }
 
         private void txt10_KeyUp(object sender, KeyEventArgs e)
         {
             if (txt10.TextLength == 1 && e.KeyCode == Keys.Enter)
             {
-                SendKeys.Send("{TAB}");
+                rows[1] = true;
+                txt6.Focus();
+                g = txt6.Text.ToLower() + txt7.Text + txt8.Text + txt9.Text + txt10.Text;
+                Guess = g.ToLower().ToCharArray();
+                CheckWord();
+            }
+            if (e.KeyCode == Keys.Back)
+            {
+                txt9.Focus();
             }
         }
         #endregion
