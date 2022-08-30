@@ -62,8 +62,19 @@ namespace Wordle
                         boxes[i].BackColor = Color.Green;
                     }
                     else if (Guess[i] != Solution[i])
-                    {
-                        boxes[i].BackColor = Color.DarkGray;
+                    {   
+                        for(int s = 0; s < Solution.Length; s++)
+                        {
+                            if(Guess[i] == Solution[s])
+                            {
+                                boxes[i].BackColor = Color.Yellow;
+                            }
+                            else
+                            {
+                                boxes[i].BackColor = Color.DarkGray;
+                            }
+                        }
+                        
                     }
                 }
                 else if (rows[1])
