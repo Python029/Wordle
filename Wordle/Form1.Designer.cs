@@ -144,6 +144,7 @@
             this.txt10.Size = new System.Drawing.Size(50, 50);
             this.txt10.TabIndex = 9;
             this.txt10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt10_KeyPress);
             this.txt10.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt10_KeyUp);
             // 
             // txt9
@@ -157,6 +158,7 @@
             this.txt9.Size = new System.Drawing.Size(50, 50);
             this.txt9.TabIndex = 8;
             this.txt9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt9_KeyPress);
             this.txt9.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt9_KeyUp);
             // 
             // txt8
@@ -170,6 +172,7 @@
             this.txt8.Size = new System.Drawing.Size(50, 50);
             this.txt8.TabIndex = 7;
             this.txt8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt8_KeyPress);
             this.txt8.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt8_KeyUp);
             // 
             // txt7
@@ -183,6 +186,7 @@
             this.txt7.Size = new System.Drawing.Size(50, 50);
             this.txt7.TabIndex = 6;
             this.txt7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt7_KeyPress);
             this.txt7.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt7_KeyUp);
             // 
             // txt6
@@ -196,6 +200,7 @@
             this.txt6.Size = new System.Drawing.Size(50, 50);
             this.txt6.TabIndex = 5;
             this.txt6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt6_KeyPress);
             this.txt6.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt6_KeyUp);
             // 
             // txt20

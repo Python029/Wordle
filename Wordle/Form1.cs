@@ -48,41 +48,63 @@ namespace Wordle
         {
             e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);         
         }
-
+        private void txt6_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
+        }
+        private void txt7_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
+        }
+        private void txt8_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
+        }
+        private void txt9_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
+        }
+        private void txt10_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
+        }
         #endregion
         private void CheckWord()
         {
             Solution = s.ToLower().ToCharArray();
             for (int i = 0; i < Guess.Length; i++)
             {
-                if (rows[0])
-                { 
-                    if (Guess[i] == Solution[i])
-                    {
-                        boxes[i].BackColor = Color.Green;
-                        for(int s = 0; s>Solution.Length; s++)
-                        {
-                            if (Guess[i] == Solution[s] && i != s)
-                            {
-                                boxes[i].BackColor = Color.Yellow;
-                            }
-                        }
-                        
-                    }
-                    else if (Guess[i] != Solution[i])
-                    {   
-                                boxes[i].BackColor = Color.DarkGray;
-                    }
-                }
-                else if (rows[1])
+                for (int s = 0; s < Solution.Length; s++)
                 {
-                    if (Guess[i] == Solution[i])
+                    if (rows[0])
                     {
-                        boxes[i+5].BackColor = Color.Green;
+                        if (Guess[i] == Solution[s] && i==s)
+                        {
+                            boxes[i].BackColor = Color.LimeGreen;
+                        }
+                        else if (Guess[i] == Solution[s] && i != s)
+                        {
+                            boxes[i].BackColor = Color.Gold;
+                        }
+                        else
+                        {
+                            boxes[i].BackColor = Color.DarkGray;
+                        }
                     }
-                    else if (Guess[i] != Solution[i])
+                    else if (rows[1])
                     {
-                        boxes[i+5].BackColor = Color.DarkGray;
+                        if (Guess[i] == Solution[s] && i == s)
+                        {
+                            boxes[i+5].BackColor = Color.LimeGreen;
+                        }
+                        else if (Guess[i] == Solution[s] && i != s)
+                        {
+                            boxes[i+5].BackColor = Color.Gold;
+                        }
+                        else
+                        {
+                            boxes[i+5].BackColor = Color.DarkGray;
+                        }
                     }
                 }
             }
@@ -202,7 +224,7 @@ namespace Wordle
             if (txt10.TextLength == 1 && e.KeyCode == Keys.Enter)
             {
                 rows[1] = true;
-                txt6.Focus();
+                txt11.Focus();
                 g = txt6.Text.ToLower() + txt7.Text + txt8.Text + txt9.Text + txt10.Text;
                 Guess = g.ToLower().ToCharArray();
                 CheckWord();
@@ -213,8 +235,9 @@ namespace Wordle
             }
         }
         #endregion
+
         #endregion
 
-
+        
     }
 }
