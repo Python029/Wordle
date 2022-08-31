@@ -73,7 +73,6 @@
             this.txt1.Size = new System.Drawing.Size(50, 50);
             this.txt1.TabIndex = 0;
             this.txt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt1_KeyPress);
             this.txt1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt1_KeyUp);
             // 
             // txt2
@@ -87,7 +86,6 @@
             this.txt2.Size = new System.Drawing.Size(50, 50);
             this.txt2.TabIndex = 1;
             this.txt2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt2_KeyPress);
             this.txt2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt2_KeyUp);
             // 
             // txt4
@@ -101,7 +99,6 @@
             this.txt4.Size = new System.Drawing.Size(50, 50);
             this.txt4.TabIndex = 3;
             this.txt4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt4_KeyPress);
             this.txt4.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt4_KeyUp);
             // 
             // txt3
@@ -115,7 +112,6 @@
             this.txt3.Size = new System.Drawing.Size(50, 50);
             this.txt3.TabIndex = 2;
             this.txt3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt3_KeyPress);
             this.txt3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt3_KeyUp);
             // 
             // txt5
@@ -130,7 +126,6 @@
             this.txt5.Size = new System.Drawing.Size(50, 50);
             this.txt5.TabIndex = 4;
             this.txt5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt5_KeyPress);
             this.txt5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt5_KeyUp);
             // 
             // txt10
@@ -144,7 +139,6 @@
             this.txt10.Size = new System.Drawing.Size(50, 50);
             this.txt10.TabIndex = 9;
             this.txt10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt10_KeyPress);
             this.txt10.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt10_KeyUp);
             // 
             // txt9
@@ -158,7 +152,6 @@
             this.txt9.Size = new System.Drawing.Size(50, 50);
             this.txt9.TabIndex = 8;
             this.txt9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt9_KeyPress);
             this.txt9.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt9_KeyUp);
             // 
             // txt8
@@ -172,7 +165,6 @@
             this.txt8.Size = new System.Drawing.Size(50, 50);
             this.txt8.TabIndex = 7;
             this.txt8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt8_KeyPress);
             this.txt8.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt8_KeyUp);
             // 
             // txt7
@@ -186,7 +178,6 @@
             this.txt7.Size = new System.Drawing.Size(50, 50);
             this.txt7.TabIndex = 6;
             this.txt7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt7_KeyPress);
             this.txt7.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt7_KeyUp);
             // 
             // txt6
@@ -200,7 +191,6 @@
             this.txt6.Size = new System.Drawing.Size(50, 50);
             this.txt6.TabIndex = 5;
             this.txt6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt6_KeyPress);
             this.txt6.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt6_KeyUp);
             // 
             // txt20
@@ -214,6 +204,7 @@
             this.txt20.Size = new System.Drawing.Size(50, 50);
             this.txt20.TabIndex = 19;
             this.txt20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt20.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt20_KeyUp);
             // 
             // txt19
             // 
@@ -226,6 +217,7 @@
             this.txt19.Size = new System.Drawing.Size(50, 50);
             this.txt19.TabIndex = 18;
             this.txt19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt19.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt19_KeyUp);
             // 
             // txt18
             // 
@@ -238,6 +230,7 @@
             this.txt18.Size = new System.Drawing.Size(50, 50);
             this.txt18.TabIndex = 17;
             this.txt18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt18.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt18_KeyUp);
             // 
             // txt17
             // 
@@ -250,6 +243,7 @@
             this.txt17.Size = new System.Drawing.Size(50, 50);
             this.txt17.TabIndex = 16;
             this.txt17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt17.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt17_KeyUp);
             // 
             // txt16
             // 
@@ -262,6 +256,7 @@
             this.txt16.Size = new System.Drawing.Size(50, 50);
             this.txt16.TabIndex = 15;
             this.txt16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt16.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt16_KeyUp);
             // 
             // txt15
             // 
@@ -274,6 +269,7 @@
             this.txt15.Size = new System.Drawing.Size(50, 50);
             this.txt15.TabIndex = 14;
             this.txt15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt15.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt15_KeyUp);
             // 
             // txt14
             // 
@@ -286,6 +282,7 @@
             this.txt14.Size = new System.Drawing.Size(50, 50);
             this.txt14.TabIndex = 13;
             this.txt14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt14.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt14_KeyUp);
             // 
             // txt13
             // 
@@ -298,6 +295,7 @@
             this.txt13.Size = new System.Drawing.Size(50, 50);
             this.txt13.TabIndex = 12;
             this.txt13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt13.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt13_KeyUp);
             // 
             // txt12
             // 
@@ -310,6 +308,7 @@
             this.txt12.Size = new System.Drawing.Size(50, 50);
             this.txt12.TabIndex = 11;
             this.txt12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt12.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt12_KeyUp);
             // 
             // txt11
             // 
@@ -322,6 +321,7 @@
             this.txt11.Size = new System.Drawing.Size(50, 50);
             this.txt11.TabIndex = 10;
             this.txt11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt11.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt11_KeyUp);
             // 
             // txt30
             // 
@@ -489,11 +489,13 @@
             this.Controls.Add(this.txt3);
             this.Controls.Add(this.txt2);
             this.Controls.Add(this.txt1);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Wordle";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 

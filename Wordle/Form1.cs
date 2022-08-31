@@ -10,7 +10,8 @@ namespace Wordle
         private void Form1_Load(object sender, EventArgs e)
         {
             boxes = new TextBox[] {txt1, txt2, txt3, txt4, txt5, txt6, txt7, txt8, txt9, txt10, txt11, txt12 ,txt13, txt14, txt15, txt16, txt17, txt18, txt19, txt20, txt21, txt22, txt23, txt24, txt25, txt26, txt27, txt28, txt29, txt30 };
-            rows = new Boolean[] { row1, row2, row3, row4, row5 };
+            rows = new Boolean[] { row1, row2, row3, row4, row5, row6 };
+            Solution = s.ToLower().ToCharArray();
         }
         TextBox[] boxes;
         Boolean[] rows;
@@ -20,58 +21,17 @@ namespace Wordle
         bool row3 = false;
         bool row4 = false;
         bool row5 = false;
+        bool row6 = false;
         string g;
         Char[] Solution;
         Char[] Guess;
-        #region Key Events
-        private void txt1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
-        }
 
-        private void txt2_KeyPress(object sender, KeyPressEventArgs e)
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
         }
-
-        private void txt3_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
-        }
-
-        private void txt4_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
-        }
-
-        private void txt5_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);         
-        }
-        private void txt6_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
-        }
-        private void txt7_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
-        }
-        private void txt8_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
-        }
-        private void txt9_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
-        }
-        private void txt10_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
-        }
-        #endregion
         private void CheckWord()
-        {
-            Solution = s.ToLower().ToCharArray();
+        {         
             for (int i = 0; i < Guess.Length; i++)
             {
                 for (int s = 0; s < Solution.Length; s++)
@@ -104,6 +64,66 @@ namespace Wordle
                         else
                         {
                             boxes[i+5].BackColor = Color.DarkGray;
+                        }
+                    }
+                    else if (rows[2])
+                    {
+                        if (Guess[i] == Solution[s] && i == s)
+                        {
+                            boxes[i + 10].BackColor = Color.LimeGreen;
+                        }
+                        else if (Guess[i] == Solution[s] && i != s)
+                        {
+                            boxes[i + 10].BackColor = Color.Gold;
+                        }
+                        else
+                        {
+                            boxes[i + 10].BackColor = Color.DarkGray;
+                        }
+                    }
+                    else if (rows[3])
+                    {
+                        if (Guess[i] == Solution[s] && i == s)
+                        {
+                            boxes[i + 15].BackColor = Color.LimeGreen;
+                        }
+                        else if (Guess[i] == Solution[s] && i != s)
+                        {
+                            boxes[i + 15].BackColor = Color.Gold;
+                        }
+                        else
+                        {
+                            boxes[i + 15].BackColor = Color.DarkGray;
+                        }
+                    }
+                    else if (rows[4])
+                    {
+                        if (Guess[i] == Solution[s] && i == s)
+                        {
+                            boxes[i + 20].BackColor = Color.LimeGreen;
+                        }
+                        else if (Guess[i] == Solution[s] && i != s)
+                        {
+                            boxes[i + 20].BackColor = Color.Gold;
+                        }
+                        else
+                        {
+                            boxes[i + 20].BackColor = Color.DarkGray;
+                        }
+                    }
+                    else if (rows[5])
+                    {
+                        if (Guess[i] == Solution[s] && i == s)
+                        {
+                            boxes[i + 25].BackColor = Color.LimeGreen;
+                        }
+                        else if (Guess[i] == Solution[s] && i != s)
+                        {
+                            boxes[i + 25].BackColor = Color.Gold;
+                        }
+                        else
+                        {
+                            boxes[i + 25].BackColor = Color.DarkGray;
                         }
                     }
                 }
@@ -165,6 +185,7 @@ namespace Wordle
                 g = txt1.Text.ToLower() + txt2.Text + txt3.Text + txt4.Text + txt5.Text;
                 Guess = g.ToLower().ToCharArray();
                 CheckWord();
+                Array.Clear(Guess, 0, Guess.Length);
             }
             if(e.KeyCode == Keys.Back)
             {
@@ -228,16 +249,139 @@ namespace Wordle
                 g = txt6.Text.ToLower() + txt7.Text + txt8.Text + txt9.Text + txt10.Text;
                 Guess = g.ToLower().ToCharArray();
                 CheckWord();
+                Array.Clear(Guess, 0, Guess.Length);
             }
             if (e.KeyCode == Keys.Back)
             {
                 txt9.Focus();
             }
         }
-        #endregion
 
         #endregion
+        #region Row 3
+        private void txt11_KeyUp(object sender, KeyEventArgs e)
+        {
+            txt11.Text = txt11.Text.ToUpper();
+            if (txt11.TextLength == 1)
+            {
+                SendKeys.Send("{TAB}");
+                rows[1] = false;
+            }
+        }
 
-        
+        private void txt12_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (txt12.TextLength == 1)
+            {
+                SendKeys.Send("{TAB}");
+            }
+            if (e.KeyCode == Keys.Back)
+            {
+                txt11.Focus();
+            }
+        }
+
+        private void txt13_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (txt13.TextLength == 1)
+            {
+                SendKeys.Send("{TAB}");
+            }
+            if (e.KeyCode == Keys.Back)
+            {
+                txt12.Focus();
+            }
+        }
+
+        private void txt14_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (txt14.TextLength == 1)
+            {
+                SendKeys.Send("{TAB}");
+            }
+            if (e.KeyCode == Keys.Back)
+            {
+                txt13.Focus();
+            }
+        }
+
+        private void txt15_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (txt15.TextLength == 1 && e.KeyCode == Keys.Enter)
+            {
+                rows[2] = true;
+                txt16.Focus();
+                g = txt11.Text.ToLower() + txt12.Text + txt13.Text + txt14.Text + txt15.Text;
+                Guess = g.ToLower().ToCharArray();
+                CheckWord();
+                Array.Clear(Guess, 0, Guess.Length);
+            }
+            if (e.KeyCode == Keys.Back)
+            {
+                txt14.Focus();
+            }
+        }
+        #endregion
+        #region Row 4
+        private void txt16_KeyUp(object sender, KeyEventArgs e)
+        {
+            txt16.Text = txt16.Text.ToUpper();
+            if (txt16.TextLength == 1)
+            {
+                SendKeys.Send("{TAB}");
+                rows[2] = false;
+            }
+        }
+        private void txt17_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (txt17.TextLength == 1)
+            {
+                SendKeys.Send("{TAB}");
+            }
+            if (e.KeyCode == Keys.Back)
+            {
+                txt16.Focus();
+            }
+        }
+        private void txt18_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (txt18.TextLength == 1)
+            {
+                SendKeys.Send("{TAB}");
+            }
+            if (e.KeyCode == Keys.Back)
+            {
+                txt17.Focus();
+            }
+        }
+        private void txt19_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (txt19.TextLength == 1)
+            {
+                SendKeys.Send("{TAB}");
+            }
+            if (e.KeyCode == Keys.Back)
+            {
+                txt20.Focus();
+            }
+        }
+        private void txt20_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (txt20.TextLength == 1 && e.KeyCode == Keys.Enter)
+            {
+                rows[3] = true;
+                txt21.Focus();
+                g = txt16.Text.ToLower() + txt17.Text + txt18.Text + txt19.Text + txt20.Text;
+                Guess = g.ToLower().ToCharArray();
+                CheckWord();
+                Array.Clear(Guess, 0, Guess.Length);
+            }
+            if (e.KeyCode == Keys.Back)
+            {
+                txt19.Focus();
+            }
+        }
+        #endregion
+        #endregion
     }
 }
