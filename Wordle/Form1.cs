@@ -1,3 +1,6 @@
+using System.Diagnostics.Tracing;
+using System.Text.RegularExpressions;
+
 namespace Wordle
 {
     public partial class Form1 : Form
@@ -11,11 +14,26 @@ namespace Wordle
         {
             boxes = new TextBox[] {txt1, txt2, txt3, txt4, txt5, txt6, txt7, txt8, txt9, txt10, txt11, txt12 ,txt13, txt14, txt15, txt16, txt17, txt18, txt19, txt20, txt21, txt22, txt23, txt24, txt25, txt26, txt27, txt28, txt29, txt30 };
             rows = new Boolean[] { row1, row2, row3, row4, row5, row6 };
-            Solution = s.ToLower().ToCharArray();
+            words = File.ReadAllText(@"H:\wordle_list.txt");
+            words = Regex.Replace(words, @"\s", "");
+            code = words.ToCharArray();
+
+            Random gen = new Random();
+            int start = gen.Next(0, 61) * 5;
+
+            //get all characters in the rest of the word
+            for (int i = start; i < (start + 5); i++)
+            {
+                wordle += code[i].ToString();
+            }
+            MessageBox.Show(wordle);
+            Solution = wordle.ToCharArray();
         }
         TextBox[] boxes;
         Boolean[] rows;
-        string s = "brain";
+        Char[] code;
+        string wordle;
+        string words;
         bool row1 = false;
         bool row2 = false;
         bool row3 = false;
@@ -139,7 +157,6 @@ namespace Wordle
                 SendKeys.SendWait("{TAB}");
             }
         }
-
         private void txt2_KeyUp(object sender, KeyEventArgs e)
         {
             if (txt2.TextLength == 1)
@@ -151,7 +168,6 @@ namespace Wordle
                 txt1.Focus();
             }
         }
-
         private void txt3_KeyUp(object sender, KeyEventArgs e)
         {
             if (txt3.TextLength == 1)
@@ -163,7 +179,6 @@ namespace Wordle
                 txt2.Focus();
             }
         }
-
         private void txt4_KeyUp(object sender, KeyEventArgs e)
         {
             if (txt4.TextLength == 1)
@@ -175,7 +190,6 @@ namespace Wordle
                 txt3.Focus();
             }
         }
-
         private void txt5_KeyUp(object sender, KeyEventArgs e)
         {
             if (txt5.TextLength == 1 && e.KeyCode == Keys.Enter)
@@ -203,7 +217,6 @@ namespace Wordle
                 rows[0] = false;
             }
         }
-
         private void txt7_KeyUp(object sender, KeyEventArgs e)
         {
             if (txt7.TextLength == 1)
@@ -215,7 +228,6 @@ namespace Wordle
                 txt6.Focus();
             }
         }
-
         private void txt8_KeyUp(object sender, KeyEventArgs e)
         {
             if (txt8.TextLength == 1)
@@ -227,7 +239,6 @@ namespace Wordle
                 txt7.Focus();
             }
         }
-
         private void txt9_KeyUp(object sender, KeyEventArgs e)
         {
             if (txt9.TextLength == 1)
@@ -239,7 +250,6 @@ namespace Wordle
                 txt8.Focus();
             }
         }
-
         private void txt10_KeyUp(object sender, KeyEventArgs e)
         {
             if (txt10.TextLength == 1 && e.KeyCode == Keys.Enter)
@@ -256,7 +266,6 @@ namespace Wordle
                 txt9.Focus();
             }
         }
-
         #endregion
         #region Row 3
         private void txt11_KeyUp(object sender, KeyEventArgs e)
@@ -268,7 +277,6 @@ namespace Wordle
                 rows[1] = false;
             }
         }
-
         private void txt12_KeyUp(object sender, KeyEventArgs e)
         {
             if (txt12.TextLength == 1)
@@ -280,7 +288,6 @@ namespace Wordle
                 txt11.Focus();
             }
         }
-
         private void txt13_KeyUp(object sender, KeyEventArgs e)
         {
             if (txt13.TextLength == 1)
@@ -292,7 +299,6 @@ namespace Wordle
                 txt12.Focus();
             }
         }
-
         private void txt14_KeyUp(object sender, KeyEventArgs e)
         {
             if (txt14.TextLength == 1)
@@ -304,7 +310,6 @@ namespace Wordle
                 txt13.Focus();
             }
         }
-
         private void txt15_KeyUp(object sender, KeyEventArgs e)
         {
             if (txt15.TextLength == 1 && e.KeyCode == Keys.Enter)
@@ -379,6 +384,126 @@ namespace Wordle
             if (e.KeyCode == Keys.Back)
             {
                 txt19.Focus();
+            }
+        }
+        #endregion
+        #region Row 5
+        private void txt21_KeyUp(object sender, KeyEventArgs e)
+        {
+            txt21.Text = txt21.Text.ToUpper();
+            if (txt21.TextLength == 1)
+            {
+                SendKeys.Send("{TAB}");
+                rows[3] = false;
+            }
+        }
+        private void txt22_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (txt22.TextLength == 1)
+            {
+                SendKeys.Send("{TAB}");
+            }
+            if (e.KeyCode == Keys.Back)
+            {
+                txt21.Focus();
+            }
+        }
+        private void txt23_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (txt23.TextLength == 1)
+            {
+                SendKeys.Send("{TAB}");
+            }
+            if (e.KeyCode == Keys.Back)
+            {
+                txt22.Focus();
+            }
+        }
+        private void txt24_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (txt24.TextLength == 1)
+            {
+                SendKeys.Send("{TAB}");
+            }
+            if (e.KeyCode == Keys.Back)
+            {
+                txt23.Focus();
+            }
+        }
+        private void txt25_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (txt25.TextLength == 1 && e.KeyCode == Keys.Enter)
+            {
+                rows[4] = true;
+                txt26.Focus();
+                g = txt21.Text.ToLower() + txt22.Text + txt23.Text + txt24.Text + txt25.Text;
+                Guess = g.ToLower().ToCharArray();
+                CheckWord();
+                Array.Clear(Guess, 0, Guess.Length);
+            }
+            if (e.KeyCode == Keys.Back)
+            {
+                txt24.Focus();
+            }
+        }
+        #endregion
+        #region Row 6
+        private void txt26_KeyUp(object sender, KeyEventArgs e)
+        {
+            txt26.Text = txt26.Text.ToUpper();
+            if (txt26.TextLength == 1)
+            {
+                SendKeys.Send("{TAB}");
+                rows[4] = false;
+            }
+        }
+        private void txt27_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (txt27.TextLength == 1)
+            {
+                SendKeys.Send("{TAB}");
+            }
+            if (e.KeyCode == Keys.Back)
+            {
+                txt26.Focus();
+            }
+        }
+        private void txt28_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (txt28.TextLength == 1)
+            {
+                SendKeys.Send("{TAB}");
+            }
+            if (e.KeyCode == Keys.Back)
+            {
+                txt27.Focus();
+            }
+        }
+        private void txt29_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (txt29.TextLength == 1)
+            {
+                SendKeys.Send("{TAB}");
+            }
+            if (e.KeyCode == Keys.Back)
+            {
+                txt28.Focus();
+            }
+        }
+        private void txt30_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (txt30.TextLength == 1 && e.KeyCode == Keys.Enter)
+            {
+                rows[5] = true;
+                this.Focus();
+                g = txt26.Text.ToLower() + txt27.Text + txt28.Text + txt29.Text + txt30.Text;
+                Guess = g.ToLower().ToCharArray();
+                CheckWord();
+                Array.Clear(Guess, 0, Guess.Length);
+            }
+            if (e.KeyCode == Keys.Back)
+            {
+                txt29.Focus();
             }
         }
         #endregion

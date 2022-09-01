@@ -334,6 +334,7 @@
             this.txt30.Size = new System.Drawing.Size(50, 50);
             this.txt30.TabIndex = 29;
             this.txt30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt30.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt30_KeyUp);
             // 
             // txt29
             // 
@@ -346,6 +347,7 @@
             this.txt29.Size = new System.Drawing.Size(50, 50);
             this.txt29.TabIndex = 28;
             this.txt29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt29.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt29_KeyUp);
             // 
             // txt28
             // 
@@ -358,6 +360,7 @@
             this.txt28.Size = new System.Drawing.Size(50, 50);
             this.txt28.TabIndex = 27;
             this.txt28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt28.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt28_KeyUp);
             // 
             // txt27
             // 
@@ -370,6 +373,7 @@
             this.txt27.Size = new System.Drawing.Size(50, 50);
             this.txt27.TabIndex = 26;
             this.txt27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt27.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt27_KeyUp);
             // 
             // txt26
             // 
@@ -382,6 +386,7 @@
             this.txt26.Size = new System.Drawing.Size(50, 50);
             this.txt26.TabIndex = 25;
             this.txt26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt26.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt26_KeyUp);
             // 
             // txt25
             // 
@@ -394,6 +399,7 @@
             this.txt25.Size = new System.Drawing.Size(50, 50);
             this.txt25.TabIndex = 24;
             this.txt25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt25.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt25_KeyUp);
             // 
             // txt24
             // 
@@ -406,6 +412,7 @@
             this.txt24.Size = new System.Drawing.Size(50, 50);
             this.txt24.TabIndex = 23;
             this.txt24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt24.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt24_KeyUp);
             // 
             // txt23
             // 
@@ -418,6 +425,7 @@
             this.txt23.Size = new System.Drawing.Size(50, 50);
             this.txt23.TabIndex = 22;
             this.txt23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt23.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt23_KeyUp);
             // 
             // txt22
             // 
@@ -430,6 +438,7 @@
             this.txt22.Size = new System.Drawing.Size(50, 50);
             this.txt22.TabIndex = 21;
             this.txt22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt22.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt22_KeyUp);
             // 
             // txt21
             // 
@@ -442,6 +451,7 @@
             this.txt21.Size = new System.Drawing.Size(50, 50);
             this.txt21.TabIndex = 20;
             this.txt21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt21.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt21_KeyUp);
             // 
             // label1
             // 
