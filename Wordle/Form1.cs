@@ -48,7 +48,21 @@ namespace Wordle
         {
             e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
         }
-        private void CheckWord()
+        private void Winner()
+        {
+            this.Focus();
+            DialogResult dialogResult = MessageBox.Show("Game Over", "You Win", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                //idk yet
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                this.Close();
+            }
+            
+        }
+        public void CheckWord()
         {         
             for (int i = 0; i < Guess.Length; i++)
             {
@@ -56,92 +70,134 @@ namespace Wordle
                 {
                     if (rows[0])
                     {
-                        if (Guess[i] == Solution[s] && i==s)
+                        if (Guess[i] == Solution[s] && i == s && boxes[i].Tag.ToString() != "Green")
                         {
                             boxes[i].BackColor = Color.LimeGreen;
+                            boxes[i].Tag = "Green";
+                            if (boxes[0].Tag.ToString() != "Green" && boxes[1].Tag.ToString() != "Green" && boxes[2].Tag.ToString() != "Green" && boxes[3].Tag.ToString() != "Green" && boxes[4].Tag.ToString() != "Green")
+                            {
+                                Winner();
+                            }
                         }
-                        else if (Guess[i] == Solution[s] && i != s)
+                        else if (Guess[i] == Solution[s] && i != s && boxes[i].Tag.ToString() != "Green" && boxes[i].Tag.ToString() != "Yellow")
                         {
                             boxes[i].BackColor = Color.Gold;
+                            boxes[i].Tag = "Yellow";
                         }
-                        else
+                        else if (Guess[i] != Solution[s] && boxes[i].Tag.ToString() != "Green" && boxes[i].Tag.ToString() != "Yellow")
                         {
                             boxes[i].BackColor = Color.DarkGray;
+                            boxes[i].Tag = "Gray";
                         }
                     }
                     else if (rows[1])
                     {
-                        if (Guess[i] == Solution[s] && i == s)
+                        if (Guess[i] == Solution[s] && i == s && boxes[i + 5].Tag.ToString() != "Green")
                         {
-                            boxes[i+5].BackColor = Color.LimeGreen;
+                            boxes[i + 5].BackColor = Color.LimeGreen;
+                            boxes[i + 5].Tag = "Green";
+                            if (boxes[5].Tag.ToString() != "Green" && boxes[6].Tag.ToString() != "Green" && boxes[7].Tag.ToString() != "Green" && boxes[8].Tag.ToString() != "Green" && boxes[9].Tag.ToString() != "Green")
+                            {
+                                Winner();
+                            }
                         }
-                        else if (Guess[i] == Solution[s] && i != s)
+                        else if (Guess[i] == Solution[s] && i != s && boxes[i + 5].Tag.ToString() != "Green" && boxes[i + 5].Tag.ToString() != "Yellow")
                         {
-                            boxes[i+5].BackColor = Color.Gold;
+                            boxes[i + 5].BackColor = Color.Gold;
+                            boxes[i + 5].Tag = "Yellow";
                         }
-                        else
+                        else if (Guess[i] != Solution[s] && boxes[i + 5].Tag.ToString() != "Green" && boxes[i + 5].Tag.ToString() != "Yellow")
                         {
-                            boxes[i+5].BackColor = Color.DarkGray;
+                            boxes[i + 5].BackColor = Color.DarkGray;
+                            boxes[i + 5].Tag = "Gray";
                         }
                     }
                     else if (rows[2])
                     {
-                        if (Guess[i] == Solution[s] && i == s)
+                        if (Guess[i] == Solution[s] && i == s && boxes[i + 10].Tag.ToString() != "Green")
                         {
                             boxes[i + 10].BackColor = Color.LimeGreen;
+                            boxes[i + 10].Tag = "Green";
+                            if (boxes[10].Tag.ToString() != "Green" && boxes[11].Tag.ToString() != "Green" && boxes[12].Tag.ToString() != "Green" && boxes[13].Tag.ToString() != "Green" && boxes[14].Tag.ToString() != "Green")
+                            {
+                                Winner();
+                            }
                         }
-                        else if (Guess[i] == Solution[s] && i != s)
+                        else if (Guess[i] == Solution[s] && i != s && boxes[i + 10].Tag.ToString() != "Green" && boxes[i + 10].Tag.ToString() != "Yellow")
                         {
                             boxes[i + 10].BackColor = Color.Gold;
+                            boxes[i + 10].Tag = "Yellow";
                         }
-                        else
+                        else if (Guess[i] != Solution[s] && boxes[i + 10].Tag.ToString() != "Green" && boxes[i + 10].Tag.ToString() != "Yellow")
                         {
                             boxes[i + 10].BackColor = Color.DarkGray;
+                            boxes[i + 10].Tag = "Gray";
                         }
                     }
                     else if (rows[3])
                     {
-                        if (Guess[i] == Solution[s] && i == s)
+                        if (Guess[i] == Solution[s] && i == s && boxes[i + 15].Tag.ToString() != "Green")
                         {
                             boxes[i + 15].BackColor = Color.LimeGreen;
+                            boxes[i + 15].Tag = "Green";
+                            if (boxes[15].Tag.ToString() != "Green" && boxes[16].Tag.ToString() != "Green" && boxes[17].Tag.ToString() != "Green" && boxes[18].Tag.ToString() != "Green" && boxes[19].Tag.ToString() != "Green")
+                            {
+                                Winner();
+                            }
                         }
-                        else if (Guess[i] == Solution[s] && i != s)
+                        else if (Guess[i] == Solution[s] && i != s && boxes[i + 15].Tag.ToString() != "Green" && boxes[i + 15].Tag.ToString() != "Yellow")
                         {
                             boxes[i + 15].BackColor = Color.Gold;
+                            boxes[i + 15].Tag = "Yellow";
                         }
-                        else
+                        else if (Guess[i] != Solution[s] && boxes[i + 15].Tag.ToString() != "Green" && boxes[i + 15].Tag.ToString() != "Yellow")
                         {
                             boxes[i + 15].BackColor = Color.DarkGray;
+                            boxes[i + 15].Tag = "Gray";
                         }
                     }
                     else if (rows[4])
                     {
-                        if (Guess[i] == Solution[s] && i == s)
+                        if (Guess[i] == Solution[s] && i == s && boxes[i + 20].Tag.ToString() != "Green")
                         {
                             boxes[i + 20].BackColor = Color.LimeGreen;
+                            boxes[i + 20].Tag = "Green";
+                            if (boxes[20].Tag.ToString() != "Green" && boxes[21].Tag.ToString() != "Green" && boxes[22].Tag.ToString() != "Green" && boxes[23].Tag.ToString() != "Green" && boxes[24].Tag.ToString() != "Green")
+                            {
+                                Winner();
+                            }
                         }
-                        else if (Guess[i] == Solution[s] && i != s)
+                        else if (Guess[i] == Solution[s] && i != s && boxes[i + 20].Tag.ToString() != "Green" && boxes[i + 20].Tag.ToString() != "Yellow")
                         {
                             boxes[i + 20].BackColor = Color.Gold;
+                            boxes[i + 20].Tag = "Yellow";
                         }
-                        else
+                        else if (Guess[i] != Solution[s] && boxes[i + 20].Tag.ToString() != "Green" && boxes[i + 20].Tag.ToString() != "Yellow")
                         {
                             boxes[i + 20].BackColor = Color.DarkGray;
+                            boxes[i + 20].Tag = "Gray";
                         }
                     }
                     else if (rows[5])
                     {
-                        if (Guess[i] == Solution[s] && i == s)
+                        if (Guess[i] == Solution[s] && i == s && boxes[i + 25].Tag.ToString() != "Green")
                         {
                             boxes[i + 25].BackColor = Color.LimeGreen;
+                            boxes[i + 25].Tag = "Green";
+                            if (boxes[25].Tag.ToString() != "Green" && boxes[26].Tag.ToString() != "Green" && boxes[27].Tag.ToString() != "Green" && boxes[28].Tag.ToString() != "Green" && boxes[29].Tag.ToString() != "Green")
+                            {
+                                Winner();
+                            }
                         }
-                        else if (Guess[i] == Solution[s] && i != s)
+                        else if (Guess[i] == Solution[s] && i != s && boxes[i + 25].Tag.ToString() != "Green" && boxes[i + 25].Tag.ToString() != "Yellow")
                         {
                             boxes[i + 25].BackColor = Color.Gold;
+                            boxes[i + 25].Tag = "Yellow";
                         }
-                        else
+                        else if (Guess[i] != Solution[s] && boxes[i + 25].Tag.ToString() != "Green" && boxes[i + 25].Tag.ToString() != "Yellow")
                         {
                             boxes[i + 25].BackColor = Color.DarkGray;
+                            boxes[i + 25].Tag = "Gray";
                         }
                     }
                 }
