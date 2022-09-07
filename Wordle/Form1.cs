@@ -34,6 +34,7 @@ namespace Wordle
         Char[] code;
         string wordle;
         string words;
+        int tries = 0;
         bool row1 = false;
         bool row2 = false;
         bool row3 = false;
@@ -48,17 +49,30 @@ namespace Wordle
         {
             e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
         }
-        private void Winner()
+        private void Loser()
         {
             this.Focus();
-            DialogResult dialogResult = MessageBox.Show("Game Over", "You Win", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show($"The word was {wordle}.\nWould you like to play again?", "You Lose", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
-                //idk yet
+                Application.Restart();
             }
             else if (dialogResult == DialogResult.No)
             {
-                this.Close();
+                Application.Exit();
+            }
+        }
+        private void Winner()
+        {
+            this.Focus();
+            DialogResult dialogResult = MessageBox.Show($"You correctly guessed the word after {tries} tries.\nWould you like to play again?", "You Win", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Application.Restart();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                Application.Exit();
             }
             
         }
@@ -70,14 +84,11 @@ namespace Wordle
                 {
                     if (rows[0])
                     {
+                        tries = 1;
                         if (Guess[i] == Solution[s] && i == s && boxes[i].Tag.ToString() != "Green")
                         {
                             boxes[i].BackColor = Color.LimeGreen;
-                            boxes[i].Tag = "Green";
-                            if (boxes[0].Tag.ToString() != "Green" && boxes[1].Tag.ToString() != "Green" && boxes[2].Tag.ToString() != "Green" && boxes[3].Tag.ToString() != "Green" && boxes[4].Tag.ToString() != "Green")
-                            {
-                                Winner();
-                            }
+                            boxes[i].Tag = "Green";                          
                         }
                         else if (Guess[i] == Solution[s] && i != s && boxes[i].Tag.ToString() != "Green" && boxes[i].Tag.ToString() != "Yellow")
                         {
@@ -89,17 +100,19 @@ namespace Wordle
                             boxes[i].BackColor = Color.DarkGray;
                             boxes[i].Tag = "Gray";
                         }
+                        if (boxes[0].Tag.ToString() == "Green" && boxes[1].Tag.ToString() == "Green" && boxes[2].Tag.ToString() == "Green" && boxes[3].Tag.ToString() == "Green" && boxes[4].Tag.ToString() == "Green")
+                        {
+                            Winner();
+                        }
                     }
                     else if (rows[1])
                     {
+                        tries = 2;
                         if (Guess[i] == Solution[s] && i == s && boxes[i + 5].Tag.ToString() != "Green")
                         {
                             boxes[i + 5].BackColor = Color.LimeGreen;
                             boxes[i + 5].Tag = "Green";
-                            if (boxes[5].Tag.ToString() != "Green" && boxes[6].Tag.ToString() != "Green" && boxes[7].Tag.ToString() != "Green" && boxes[8].Tag.ToString() != "Green" && boxes[9].Tag.ToString() != "Green")
-                            {
-                                Winner();
-                            }
+                           
                         }
                         else if (Guess[i] == Solution[s] && i != s && boxes[i + 5].Tag.ToString() != "Green" && boxes[i + 5].Tag.ToString() != "Yellow")
                         {
@@ -111,17 +124,19 @@ namespace Wordle
                             boxes[i + 5].BackColor = Color.DarkGray;
                             boxes[i + 5].Tag = "Gray";
                         }
+                        if (boxes[5].Tag.ToString() == "Green" && boxes[6].Tag.ToString() == "Green" && boxes[7].Tag.ToString() == "Green" && boxes[8].Tag.ToString() == "Green" && boxes[9].Tag.ToString() == "Green")
+                        {
+                            Winner();
+                        }
                     }
                     else if (rows[2])
                     {
+                        tries = 3;
                         if (Guess[i] == Solution[s] && i == s && boxes[i + 10].Tag.ToString() != "Green")
                         {
                             boxes[i + 10].BackColor = Color.LimeGreen;
                             boxes[i + 10].Tag = "Green";
-                            if (boxes[10].Tag.ToString() != "Green" && boxes[11].Tag.ToString() != "Green" && boxes[12].Tag.ToString() != "Green" && boxes[13].Tag.ToString() != "Green" && boxes[14].Tag.ToString() != "Green")
-                            {
-                                Winner();
-                            }
+                            
                         }
                         else if (Guess[i] == Solution[s] && i != s && boxes[i + 10].Tag.ToString() != "Green" && boxes[i + 10].Tag.ToString() != "Yellow")
                         {
@@ -133,17 +148,19 @@ namespace Wordle
                             boxes[i + 10].BackColor = Color.DarkGray;
                             boxes[i + 10].Tag = "Gray";
                         }
+                        if (boxes[10].Tag.ToString() == "Green" && boxes[11].Tag.ToString() == "Green" && boxes[12].Tag.ToString() == "Green" && boxes[13].Tag.ToString() == "Green" && boxes[14].Tag.ToString() == "Green")
+                        {
+                            Winner();
+                        }
                     }
                     else if (rows[3])
                     {
+                        tries = 4;
                         if (Guess[i] == Solution[s] && i == s && boxes[i + 15].Tag.ToString() != "Green")
                         {
                             boxes[i + 15].BackColor = Color.LimeGreen;
                             boxes[i + 15].Tag = "Green";
-                            if (boxes[15].Tag.ToString() != "Green" && boxes[16].Tag.ToString() != "Green" && boxes[17].Tag.ToString() != "Green" && boxes[18].Tag.ToString() != "Green" && boxes[19].Tag.ToString() != "Green")
-                            {
-                                Winner();
-                            }
+                            
                         }
                         else if (Guess[i] == Solution[s] && i != s && boxes[i + 15].Tag.ToString() != "Green" && boxes[i + 15].Tag.ToString() != "Yellow")
                         {
@@ -155,17 +172,19 @@ namespace Wordle
                             boxes[i + 15].BackColor = Color.DarkGray;
                             boxes[i + 15].Tag = "Gray";
                         }
+                        if (boxes[15].Tag.ToString() == "Green" && boxes[16].Tag.ToString() == "Green" && boxes[17].Tag.ToString() == "Green" && boxes[18].Tag.ToString() == "Green" && boxes[19].Tag.ToString() == "Green")
+                        {
+                            Winner();
+                        }
                     }
                     else if (rows[4])
                     {
+                        tries = 5;
                         if (Guess[i] == Solution[s] && i == s && boxes[i + 20].Tag.ToString() != "Green")
                         {
                             boxes[i + 20].BackColor = Color.LimeGreen;
                             boxes[i + 20].Tag = "Green";
-                            if (boxes[20].Tag.ToString() != "Green" && boxes[21].Tag.ToString() != "Green" && boxes[22].Tag.ToString() != "Green" && boxes[23].Tag.ToString() != "Green" && boxes[24].Tag.ToString() != "Green")
-                            {
-                                Winner();
-                            }
+                            
                         }
                         else if (Guess[i] == Solution[s] && i != s && boxes[i + 20].Tag.ToString() != "Green" && boxes[i + 20].Tag.ToString() != "Yellow")
                         {
@@ -177,17 +196,19 @@ namespace Wordle
                             boxes[i + 20].BackColor = Color.DarkGray;
                             boxes[i + 20].Tag = "Gray";
                         }
+                        if (boxes[20].Tag.ToString() == "Green" && boxes[21].Tag.ToString() == "Green" && boxes[22].Tag.ToString() == "Green" && boxes[23].Tag.ToString() == "Green" && boxes[24].Tag.ToString() == "Green")
+                        {
+                            Winner();
+                        }
                     }
                     else if (rows[5])
                     {
+                        tries = 6;
                         if (Guess[i] == Solution[s] && i == s && boxes[i + 25].Tag.ToString() != "Green")
                         {
                             boxes[i + 25].BackColor = Color.LimeGreen;
                             boxes[i + 25].Tag = "Green";
-                            if (boxes[25].Tag.ToString() != "Green" && boxes[26].Tag.ToString() != "Green" && boxes[27].Tag.ToString() != "Green" && boxes[28].Tag.ToString() != "Green" && boxes[29].Tag.ToString() != "Green")
-                            {
-                                Winner();
-                            }
+                            
                         }
                         else if (Guess[i] == Solution[s] && i != s && boxes[i + 25].Tag.ToString() != "Green" && boxes[i + 25].Tag.ToString() != "Yellow")
                         {
@@ -198,6 +219,17 @@ namespace Wordle
                         {
                             boxes[i + 25].BackColor = Color.DarkGray;
                             boxes[i + 25].Tag = "Gray";
+                        }
+                        if (boxes[25].Tag.ToString() == "Green" && boxes[26].Tag.ToString() == "Green" && boxes[27].Tag.ToString() == "Green" && boxes[28].Tag.ToString() == "Green" && boxes[29].Tag.ToString() == "Green")
+                        {
+                            Winner();
+                        }
+                        if(i==4 && s==4)
+                        {
+                            if (boxes[25].Tag.ToString() != "Green" || boxes[26].Tag.ToString() != "Green" || boxes[27].Tag.ToString() != "Green" || boxes[28].Tag.ToString() != "Green" || boxes[29].Tag.ToString() != "Green")
+                            {
+                                Loser();
+                            }
                         }
                     }
                 }
