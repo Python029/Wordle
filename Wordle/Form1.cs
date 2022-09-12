@@ -44,6 +44,7 @@ namespace Wordle
         string g;
         Char[] Solution;
         Char[] Guess;
+        Form2 f2 = new Form2();
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -94,14 +95,14 @@ namespace Wordle
                             ((Button)this.Controls["btn" + Guess[i].ToString()]).BackColor = Color.LimeGreen;
                             ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag = "Green";
                         }
-                        else if (Guess[i] == Solution[s] && i != s && boxes[i].Tag.ToString() != "Green" && boxes[i].Tag.ToString() != "Yellow" && ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag != "Yellow")
+                        else if (Guess[i] == Solution[s] && i != s && boxes[i].Tag.ToString() != "Green" && boxes[i].Tag.ToString() != "Yellow")
                         {
                             boxes[i].BackColor = Color.Gold;
                             boxes[i].Tag = "Yellow";
                             ((Button)this.Controls["btn" + Guess[i].ToString()]).BackColor = Color.Gold;
                             ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag = "Yellow";
                         }
-                        else if (Guess[i] != Solution[s] && boxes[i].Tag.ToString() != "Green" && boxes[i].Tag.ToString() != "Yellow" && ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag != "Green" && ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag != "Gray")
+                        else if (Guess[i] != Solution[s] && boxes[i].Tag.ToString() != "Green" && boxes[i].Tag.ToString() != "Yellow")
                         {
                             boxes[i].BackColor = Color.DarkGray;
                             boxes[i].Tag = "Gray";
@@ -112,6 +113,7 @@ namespace Wordle
                         {
                             Winner();
                         }
+                        
                     }
                     else if (rows[1])
                     {
@@ -123,14 +125,14 @@ namespace Wordle
                             ((Button)this.Controls["btn" + Guess[i].ToString()]).BackColor = Color.LimeGreen;
                             ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag = "Green";
                         }
-                        else if (Guess[i] == Solution[s] && i != s && boxes[i + 5].Tag.ToString() != "Green" && boxes[i + 5].Tag.ToString() != "Yellow" && ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag != "Green" && ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag != "Yellow")
+                        else if (Guess[i] == Solution[s] && i != s && boxes[i + 5].Tag.ToString() != "Green" && boxes[i + 5].Tag.ToString() != "Yellow")
                         {
                             boxes[i + 5].BackColor = Color.Gold;
                             boxes[i + 5].Tag = "Yellow";
                             ((Button)this.Controls["btn" + Guess[i].ToString()]).BackColor = Color.Gold;
                             ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag = "Yellow";
                         }
-                        else if (Guess[i] != Solution[s] && boxes[i + 5].Tag.ToString() != "Green" && boxes[i + 5].Tag.ToString() != "Yellow" && ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag != "Green" && ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag != "Gray")
+                        else if (Guess[i] != Solution[s] && boxes[i + 5].Tag.ToString() != "Green" && boxes[i + 5].Tag.ToString() != "Yellow")
                         {
                             boxes[i + 5].BackColor = Color.DarkGray;
                             boxes[i + 5].Tag = "Gray";
@@ -149,17 +151,22 @@ namespace Wordle
                         {
                             boxes[i + 10].BackColor = Color.LimeGreen;
                             boxes[i + 10].Tag = "Green";
-
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).BackColor = Color.LimeGreen;
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag = "Green";
                         }
                         else if (Guess[i] == Solution[s] && i != s && boxes[i + 10].Tag.ToString() != "Green" && boxes[i + 10].Tag.ToString() != "Yellow")
                         {
                             boxes[i + 10].BackColor = Color.Gold;
                             boxes[i + 10].Tag = "Yellow";
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).BackColor = Color.Gold;
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag = "Yellow";
                         }
                         else if (Guess[i] != Solution[s] && boxes[i + 10].Tag.ToString() != "Green" && boxes[i + 10].Tag.ToString() != "Yellow")
                         {
                             boxes[i + 10].BackColor = Color.DarkGray;
                             boxes[i + 10].Tag = "Gray";
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).BackColor = Color.DarkGray;
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag = "Gray";
                         }
                         if (boxes[10].Tag.ToString() == "Green" && boxes[11].Tag.ToString() == "Green" && boxes[12].Tag.ToString() == "Green" && boxes[13].Tag.ToString() == "Green" && boxes[14].Tag.ToString() == "Green")
                         {
@@ -173,17 +180,22 @@ namespace Wordle
                         {
                             boxes[i + 15].BackColor = Color.LimeGreen;
                             boxes[i + 15].Tag = "Green";
-
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).BackColor = Color.LimeGreen;
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag = "Green";
                         }
                         else if (Guess[i] == Solution[s] && i != s && boxes[i + 15].Tag.ToString() != "Green" && boxes[i + 15].Tag.ToString() != "Yellow")
                         {
                             boxes[i + 15].BackColor = Color.Gold;
                             boxes[i + 15].Tag = "Yellow";
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).BackColor = Color.Gold;
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag = "Yellow";
                         }
                         else if (Guess[i] != Solution[s] && boxes[i + 15].Tag.ToString() != "Green" && boxes[i + 15].Tag.ToString() != "Yellow")
                         {
                             boxes[i + 15].BackColor = Color.DarkGray;
                             boxes[i + 15].Tag = "Gray";
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).BackColor = Color.DarkGray;
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag = "Gray";
                         }
                         if (boxes[15].Tag.ToString() == "Green" && boxes[16].Tag.ToString() == "Green" && boxes[17].Tag.ToString() == "Green" && boxes[18].Tag.ToString() == "Green" && boxes[19].Tag.ToString() == "Green")
                         {
@@ -197,17 +209,22 @@ namespace Wordle
                         {
                             boxes[i + 20].BackColor = Color.LimeGreen;
                             boxes[i + 20].Tag = "Green";
-
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).BackColor = Color.LimeGreen;
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag = "Green";
                         }
                         else if (Guess[i] == Solution[s] && i != s && boxes[i + 20].Tag.ToString() != "Green" && boxes[i + 20].Tag.ToString() != "Yellow")
                         {
                             boxes[i + 20].BackColor = Color.Gold;
                             boxes[i + 20].Tag = "Yellow";
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).BackColor = Color.Gold;
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag = "Yellow";
                         }
                         else if (Guess[i] != Solution[s] && boxes[i + 20].Tag.ToString() != "Green" && boxes[i + 20].Tag.ToString() != "Yellow")
                         {
                             boxes[i + 20].BackColor = Color.DarkGray;
                             boxes[i + 20].Tag = "Gray";
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).BackColor = Color.DarkGray;
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag = "Gray";
                         }
                         if (boxes[20].Tag.ToString() == "Green" && boxes[21].Tag.ToString() == "Green" && boxes[22].Tag.ToString() == "Green" && boxes[23].Tag.ToString() == "Green" && boxes[24].Tag.ToString() == "Green")
                         {
@@ -221,17 +238,22 @@ namespace Wordle
                         {
                             boxes[i + 25].BackColor = Color.LimeGreen;
                             boxes[i + 25].Tag = "Green";
-
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).BackColor = Color.LimeGreen;
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag = "Green";
                         }
                         else if (Guess[i] == Solution[s] && i != s && boxes[i + 25].Tag.ToString() != "Green" && boxes[i + 25].Tag.ToString() != "Yellow")
                         {
                             boxes[i + 25].BackColor = Color.Gold;
                             boxes[i + 25].Tag = "Yellow";
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).BackColor = Color.Gold;
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag = "Yellow";
                         }
                         else if (Guess[i] != Solution[s] && boxes[i + 25].Tag.ToString() != "Green" && boxes[i + 25].Tag.ToString() != "Yellow")
                         {
                             boxes[i + 25].BackColor = Color.DarkGray;
                             boxes[i + 25].Tag = "Gray";
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).BackColor = Color.DarkGray;
+                            ((Button)this.Controls["btn" + Guess[i].ToString()]).Tag = "Gray";
                         }
                         if (boxes[25].Tag.ToString() == "Green" && boxes[26].Tag.ToString() == "Green" && boxes[27].Tag.ToString() == "Green" && boxes[28].Tag.ToString() == "Green" && boxes[29].Tag.ToString() == "Green")
                         {
@@ -468,7 +490,7 @@ namespace Wordle
             }
             if (e.KeyCode == Keys.Back)
             {
-                txt20.Focus();
+                txt18.Focus();
             }
         }
         private void txt20_KeyUp(object sender, KeyEventArgs e)
@@ -608,6 +630,12 @@ namespace Wordle
             }
         }
         #endregion
+
         #endregion
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            f2.Show();
+        }
     }
 }
