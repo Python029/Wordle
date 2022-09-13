@@ -83,6 +83,26 @@ namespace Wordle.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap stats_back {
+            get {
+                object obj = ResourceManager.GetObject("stats back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Stats_icon {
+            get {
+                object obj = ResourceManager.GetObject("Stats-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Wordle_How_to {
             get {
                 object obj = ResourceManager.GetObject("Wordle How to", resourceCulture);

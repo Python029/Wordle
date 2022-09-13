@@ -21,5 +21,10 @@ namespace Wordle
         {
             this.Close();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

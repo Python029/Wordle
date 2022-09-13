@@ -45,6 +45,7 @@ namespace Wordle
         Char[] Solution;
         Char[] Guess;
         Form2 f2 = new Form2();
+        Form3 f3 = new Form3();
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -636,6 +637,11 @@ namespace Wordle
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             f2.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            f3.Show();
         }
     }
 }
