@@ -55,6 +55,9 @@ namespace Wordle
         private void Loser()
         {
             this.Focus();
+            Properties.Settings.Default.Streak = 0;
+            Properties.Settings.Default.Played++;
+            //Properties.Settings.Default.Percent = Properties.Settings.Default.Wins/Properties.Settings.Default.Played;
             DialogResult dialogResult = MessageBox.Show($"The word was {wordle}.\nWould you like to play again?", "You Lose", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
@@ -68,6 +71,13 @@ namespace Wordle
         private void Winner()
         {
             this.Focus();
+            Properties.Settings.Default.Streak++;
+            Properties.Settings.Default.Wins++;
+            Properties.Settings.Default.Played++;
+            if (Properties.Settings.Default.Streak > Properties.Settings.Default.Max)
+            {
+                Properties.Settings.Default.Max = Properties.Settings.Default.Streak;
+            }
             DialogResult dialogResult = MessageBox.Show($"You correctly guessed the word on your {tries} try.\nWould you like to play again?", "You Win", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
@@ -641,7 +651,20 @@ namespace Wordle
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            f3.Show();
+            if(Properties.Settings.Default.Played>0)
+            {
+                f3.Show();
+            }
+            else if(Properties.Settings.Default.Played == 0)
+            {
+                MessageBox.Show("You must play at least one time to view stats.");
+            }
+            
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.Save();
         }
     }
 }

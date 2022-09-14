@@ -42,9 +42,9 @@
             this.lblPlayed.Font = new System.Drawing.Font("Comfortaa", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblPlayed.Location = new System.Drawing.Point(113, 41);
             this.lblPlayed.Name = "lblPlayed";
-            this.lblPlayed.Size = new System.Drawing.Size(67, 55);
+            this.lblPlayed.Size = new System.Drawing.Size(44, 55);
             this.lblPlayed.TabIndex = 0;
-            this.lblPlayed.Text = "40";
+            this.lblPlayed.Text = "0";
             this.lblPlayed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblPercent
@@ -66,9 +66,9 @@
             this.lblMax.Font = new System.Drawing.Font("Comfortaa", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblMax.Location = new System.Drawing.Point(313, 41);
             this.lblMax.Name = "lblMax";
-            this.lblMax.Size = new System.Drawing.Size(57, 55);
+            this.lblMax.Size = new System.Drawing.Size(44, 55);
             this.lblMax.TabIndex = 2;
-            this.lblMax.Text = "17";
+            this.lblMax.Text = "0";
             this.lblMax.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblStreak
@@ -78,9 +78,9 @@
             this.lblStreak.Font = new System.Drawing.Font("Comfortaa", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblStreak.Location = new System.Drawing.Point(246, 41);
             this.lblStreak.Name = "lblStreak";
-            this.lblStreak.Size = new System.Drawing.Size(59, 55);
+            this.lblStreak.Size = new System.Drawing.Size(44, 55);
             this.lblStreak.TabIndex = 3;
-            this.lblStreak.Text = "12";
+            this.lblStreak.Text = "0";
             this.lblStreak.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form3
