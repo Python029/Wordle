@@ -32,5 +32,24 @@ namespace Wordle
         {
             this.Close();
         }
+
+        private void Form3_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                DialogResult dialogResult = MessageBox.Show($"Would you like to clear your stats?", "Clear Stats", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    Properties.Settings.Default.Reset();
+                    Properties.Settings.Default.Save();
+                    this.Close();
+                    MessageBox.Show("Your stats have been reset.");
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+
+                }
+            }
+        }
     }
 }
