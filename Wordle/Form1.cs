@@ -15,7 +15,7 @@ namespace Wordle
             boxes = new TextBox[] {txt1, txt2, txt3, txt4, txt5, txt6, txt7, txt8, txt9, txt10, txt11, txt12 ,txt13, txt14, txt15, txt16, txt17, txt18, txt19, txt20, txt21, txt22, txt23, txt24, txt25, txt26, txt27, txt28, txt29, txt30 };
             rows = new Boolean[] { row1, row2, row3, row4, row5, row6 };
             //Change based on computer
-            /*words = File.ReadAllText(@"H:\wordle_list.txt");
+            words = File.ReadAllText(@"D:\wordle_list.txt");
             words = Regex.Replace(words, @"\s", "");
             code = words.ToCharArray();
 
@@ -28,7 +28,7 @@ namespace Wordle
                 wordle += code[i].ToString();
             }
             MessageBox.Show(wordle);
-            Solution = wordle.ToCharArray();*/
+            Solution = wordle.ToCharArray();
         }
         TextBox[] boxes;
         Boolean[] rows;
@@ -670,15 +670,7 @@ namespace Wordle
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Escape)
-            {
-                MessageBox.Show()
-            }
-        }
-
-        private void Form1_KeyDown(object sender, KeyEventArgs e)
-        {
-            if(e.KeyCode == Keys.Escape)
+            if (e.KeyCode == Keys.Escape)
             {
                 DialogResult dialogResult = MessageBox.Show($"Would you like to clear your stats?", "Clear Stats", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
@@ -688,9 +680,9 @@ namespace Wordle
                 }
                 else if (dialogResult == DialogResult.No)
                 {
-                    
+
                 }
             }
-        }
+        } 
     }
 }
