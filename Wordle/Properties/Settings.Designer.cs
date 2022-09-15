@@ -25,7 +25,7 @@ namespace Wordle.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("24")]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public int Wins {
             get {
                 return ((int)(this["Wins"]));
@@ -37,7 +37,7 @@ namespace Wordle.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("40")]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public int Played {
             get {
                 return ((int)(this["Played"]));
@@ -61,7 +61,7 @@ namespace Wordle.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("8")]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public int Streak {
             get {
                 return ((int)(this["Streak"]));
@@ -73,19 +73,7 @@ namespace Wordle.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool Previous {
-            get {
-                return ((bool)(this["Previous"]));
-            }
-            set {
-                this["Previous"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("17")]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public int Max {
             get {
                 return ((int)(this["Max"]));

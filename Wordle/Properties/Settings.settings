@@ -3,22 +3,19 @@
   <Profiles />
   <Settings>
     <Setting Name="Wins" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">24</Value>
+      <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="Played" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">40</Value>
+      <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="Percent" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="Streak" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">8</Value>
-    </Setting>
-    <Setting Name="Previous" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="Max" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">17</Value>
+      <Value Profile="(Default)">0</Value>
     </Setting>
   </Settings>
 </SettingsFile>

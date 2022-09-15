@@ -11,7 +11,7 @@ namespace Wordle
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
+        {         
             boxes = new TextBox[] {txt1, txt2, txt3, txt4, txt5, txt6, txt7, txt8, txt9, txt10, txt11, txt12 ,txt13, txt14, txt15, txt16, txt17, txt18, txt19, txt20, txt21, txt22, txt23, txt24, txt25, txt26, txt27, txt28, txt29, txt30 };
             rows = new Boolean[] { row1, row2, row3, row4, row5, row6 };
             //Change based on computer
@@ -51,11 +51,14 @@ namespace Wordle
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
+            
         }
         #region Endgame
         private void Loser()
         {
             this.Focus();
+            Properties.Settings.Default.Streak = 0;
+            Properties.Settings.Default.Played++;      
             DialogResult dialogResult = MessageBox.Show($"The word was {wordle}.\nWould you like to play again?", "You Lose", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
@@ -69,6 +72,13 @@ namespace Wordle
         private void Winner()
         {
             this.Focus();
+            Properties.Settings.Default.Streak++;
+            Properties.Settings.Default.Wins++;
+            Properties.Settings.Default.Played++;
+            if (Properties.Settings.Default.Streak > Properties.Settings.Default.Max)
+            {
+                Properties.Settings.Default.Max = Properties.Settings.Default.Streak;
+            }
             DialogResult dialogResult = MessageBox.Show($"You correctly guessed the word on your {tries} try.\nWould you like to play again?", "You Win", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
@@ -642,7 +652,28 @@ namespace Wordle
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            f3.Show();
+            if(Properties.Settings.Default.Played>0)
+            {
+                f3.Show();
+            }
+            else if(Properties.Settings.Default.Played == 0)
+            {
+                MessageBox.Show("You must play at least one time to view stats.");
+            }
+            
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.Save();
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Escape)
+            {
+                MessageBox.Show()
+            }
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)

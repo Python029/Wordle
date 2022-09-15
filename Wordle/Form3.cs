@@ -20,12 +20,17 @@ namespace Wordle
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            Math.Floor(percent);
+            Properties.Settings.Default.Percent = ((double)Properties.Settings.Default.Wins / (double)Properties.Settings.Default.Played)*100;
+            Math.Round(Math.Floor(Properties.Settings.Default.Percent),0);
             lblPlayed.Text = Properties.Settings.Default.Played.ToString();
-            lblPercent.Text = ($"{percent.ToString()}%");
+            lblPercent.Text = ($"{Properties.Settings.Default.Percent.ToString("0")}%");
             lblStreak.Text = Properties.Settings.Default.Streak.ToString();
             lblMax.Text = Properties.Settings.Default.Max.ToString();
         }
-        double percent = (Properties.Settings.Default.Wins / Properties.Settings.Default.Played);
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
