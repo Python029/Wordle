@@ -37,7 +37,7 @@ namespace Wordle
         {
             if (e.KeyCode == Keys.Escape)
             {
-                DialogResult dialogResult = MessageBox.Show($"Would you like to clear your stats?", "Clear Stats", MessageBoxButtons.YesNo);
+                DialogResult dialogResult = MessageBox.Show("Would you like to clear your stats?", "Clear Stats", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
                     Properties.Settings.Default.Reset();

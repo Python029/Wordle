@@ -35,6 +35,10 @@
             this.lblStreak = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // lblPlayed
@@ -106,6 +110,38 @@
             this.label1.Text = "Press Esc to reset stats";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Location = new System.Drawing.Point(481, -13);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(53, 254);
+            this.panel2.TabIndex = 6;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Location = new System.Drawing.Point(-42, -9);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(53, 254);
+            this.panel3.TabIndex = 7;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.Location = new System.Drawing.Point(-13, 222);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(530, 30);
+            this.panel4.TabIndex = 8;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Black;
+            this.panel5.Location = new System.Drawing.Point(-3, -20);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(530, 30);
+            this.panel5.TabIndex = 9;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -113,6 +149,10 @@
             this.BackgroundImage = global::Wordle.Properties.Resources.stats_back;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(491, 232);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblStreak);
@@ -139,5 +179,9 @@
         private Label lblStreak;
         private Panel panel1;
         private Label label1;
+        private Panel panel2;
+        private Panel panel3;
+        private Panel panel4;
+        private Panel panel5;
     }
 }

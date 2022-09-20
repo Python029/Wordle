@@ -15,26 +15,21 @@ namespace Wordle
             boxes = new TextBox[] {txt1, txt2, txt3, txt4, txt5, txt6, txt7, txt8, txt9, txt10, txt11, txt12 ,txt13, txt14, txt15, txt16, txt17, txt18, txt19, txt20, txt21, txt22, txt23, txt24, txt25, txt26, txt27, txt28, txt29, txt30 };
             rows = new Boolean[] { row1, row2, row3, row4, row5, row6 };
             //Change based on computer
-            words = File.ReadAllText(@"H:\wordle_list.txt");
-            words = Regex.Replace(words, @"\s", "");
-            code = words.ToCharArray();
-
+            AddWords();
+            //Char[] charArr = sentence.ToCharArray();
             Random gen = new Random();
-            int start = gen.Next(0, 61) * 5;
+            int start = gen.Next(0, words.Count());
 
             //get all characters in the rest of the word
-            for (int i = start; i < (start + 5); i++)
-            {
-                wordle += code[i].ToString();
-            }
+            wordle = words[start];
             MessageBox.Show(wordle);
             Solution = wordle.ToCharArray();
         }
         TextBox[] boxes;
+        List<string> words = new List<string>();
         Boolean[] rows;
         Char[] code;
         string wordle;
-        string words;
         string tries = "";
         bool row1 = false;
         bool row2 = false;
@@ -52,6 +47,71 @@ namespace Wordle
         {
             e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
             
+        }
+        private void AddWords()
+        {
+            words.Add("mourn");
+            words.Add("nasty");
+            words.Add("rupee");
+            words.Add("choke");
+            words.Add("chant");
+            words.Add("spill");
+            words.Add("vivid");
+            words.Add("bloke");
+            words.Add("trove");
+            words.Add("thorn");
+            words.Add("other");
+            words.Add("tacit");
+            words.Add("swill");
+            words.Add("dodge");
+            words.Add("shake");
+            words.Add("caulk");
+            words.Add("aroma");
+            words.Add("cynic");
+            words.Add("robin");
+            words.Add("ultra");
+            words.Add("ulcer");
+            words.Add("pause");
+            words.Add("humor");
+            words.Add("frame");
+            words.Add("elder");
+            words.Add("skill");
+            words.Add("aloft");
+            words.Add("pleat");
+            words.Add("shard");
+            words.Add("moist");
+            words.Add("those");
+            words.Add("light");
+            words.Add("wrung");
+            words.Add("could");
+            words.Add("perky");
+            words.Add("mount");
+            words.Add("whack");
+            words.Add("sugar");
+            words.Add("knoll");
+            words.Add("crimp");
+            words.Add("wince");
+            words.Add("prick");
+            words.Add("robot");
+            words.Add("point");
+            words.Add("proxy");
+            words.Add("shire");
+            words.Add("solar");
+            words.Add("panic");
+            words.Add("tangy");
+            words.Add("abbey");
+            words.Add("favor");
+            words.Add("drink");
+            words.Add("query");
+            words.Add("gorge");
+            words.Add("crank");
+            words.Add("slump");
+            words.Add("banal");
+            words.Add("tiger");
+            words.Add("siege");
+            words.Add("truss");
+            words.Add("boost");
+            words.Add("rebus");
         }
         #region Endgame
         private void Loser()
@@ -658,7 +718,7 @@ namespace Wordle
             }
             else if(Properties.Settings.Default.Played == 0)
             {
-                MessageBox.Show("You must play at least one time to view stats.");
+                MessageBox.Show("You currently have no stats.\nYou must play at least one time to view stats.");
             }
             
         }
