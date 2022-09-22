@@ -22,7 +22,7 @@ namespace Wordle
 
             //get all characters in the rest of the word
             wordle = words[start];
-            MessageBox.Show(wordle);
+            //MessageBox.Show(wordle);
             Solution = wordle.ToCharArray();
         }
         TextBox[] boxes;

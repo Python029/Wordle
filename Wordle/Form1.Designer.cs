@@ -518,10 +518,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.BackColor = System.Drawing.Color.SkyBlue;
+            this.label1.Font = new System.Drawing.Font("HelveticaNeue", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(77, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(235, 73);
+            this.label1.Size = new System.Drawing.Size(249, 76);
             this.label1.TabIndex = 30;
             this.label1.Text = "Wordle";
             // 
@@ -831,6 +832,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(411, 511);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
